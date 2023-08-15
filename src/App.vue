@@ -4,8 +4,12 @@
     <!-- <router-link to="/login">Login</router-link> | -->
     <!-- <router-link to="/dashboard">DashBoard</router-link> -->
   <!-- </nav> -->
-  <router-view/>
+  <router-view/> 
 </template>
+
+<script setup>
+
+</script>
 
 <style lang="scss">
 #app {
@@ -78,6 +82,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+html, body {
+      height: 100%;
 }
 
 </style>

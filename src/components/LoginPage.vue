@@ -1,4 +1,31 @@
+
 <script setup>
+
+ import router from "../router"; 
+
+ function login() {
+  //alert("Logar");
+
+  //exemplos
+  /*
+
+    // route by route path
+    this.$router.push('home')
+
+    // object
+    this.$router.push({ path: 'home' })
+
+    // named route navigation with parameters
+    this.$router.push({ name: 'user', params: { userId: '123' } })
+
+    // with query params, resulting in /profile?info=some-info
+    this.$router.push({ path: 'profile', query: { info: 'some-info' }
+
+  */
+  
+  router.push({path:'/dashboard'});
+
+ }
 
 </script>
 
@@ -14,7 +41,7 @@
                 
                 <input class="inputCustom" placeholder="Informe a Senha" type="password" required />
 
-                <input class="inputButton" type="submit" value="Entrar"/> <!-- @click="login()" -->
+                <input class="inputButton" type="submit" value="Entrar" @click.prevent="login()"/> <!-- @click="login()" -->
             
             </form>
 
@@ -22,8 +49,11 @@
     </div>
 </template>
 
-<style lang="scss">
-  
+<!-- <style lang="sass" src="./style.sass" scoped /> -->
+
+<style lang="scss" scoped >
+
+ 
   .container-login {
     width: 100%;
     height: 100vh;
@@ -72,6 +102,6 @@
 
   .inputButton:hover{
    opacity: 0.7;
-  }
+  }  
 
-</style>
+</style> 
