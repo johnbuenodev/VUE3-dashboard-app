@@ -2,11 +2,12 @@
 
 import DashBoardPage from './DashBoardPage.vue';
 // import CardComp from './CardComp.vue';
+import ListComp from './ListComp.vue';
 
 export default {
     components: {
         DashBoardPage,
-        // CardComp
+        ListComp
     }
 }
 
@@ -15,8 +16,8 @@ export default {
 <template>
         <DashBoardPage>
             <template v-slot:pages>
-                <!-- <span style="text-align: start;margin-bottom:16px;">Produtos</span>
-                
+                <span style="text-align: start;margin-bottom:16px;font-size: 18px;">Produtos</span>
+                <!--
                 <div class="container-cards"> 
                     <CardComp :porcentagem="'11'" :qtd="'10'" :title="'Usuarios'" :iconProps="'fa-users'"/>
                     <CardComp :porcentagem="'22'" :qtd="'20'" :title="'Produtos'" :iconProps="'fa-box'"/>
@@ -24,6 +25,8 @@ export default {
                     <CardComp :porcentagem="'44'" :qtd="'40'" :title="'Relatorios'" :iconProps="'fa-chart-bar'"/>
                 </div>
                  -->
+
+                 <ListComp />
             </template>
         </DashBoardPage>
 </template>

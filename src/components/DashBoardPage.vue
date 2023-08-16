@@ -8,7 +8,7 @@ import NavBarComp from './NavBarComp.vue';
 <template>
     <div class="main">
     
-        <div class="sidebar">
+        <div class="sidebarCustom">
             <SideBarComp />
         </div>
 
@@ -35,11 +35,12 @@ import NavBarComp from './NavBarComp.vue';
     display:flex;
     width: 100%;
     height: 100vh;
-    background-color: white; /* $royal; */
+    background-color: #f2f2f3; /* white $royal; */
 }
 
-.sidebar {
+.sidebarCustom {
     width: 220px;
+    /* border: 1px solid red; */
     height: 100vh;
     background-color: #4169E1;
     border-right: 1px solid black;
@@ -66,7 +67,7 @@ import NavBarComp from './NavBarComp.vue';
   display: flex;
   flex-direction: column; 
   width: calc(100% - 40px); /* 60px - 80px*/
-  padding: 16px;   
+  /* padding: 16px;    */
   justify-content: start;
   padding-top: 16px;
   padding-bottom: 16px;

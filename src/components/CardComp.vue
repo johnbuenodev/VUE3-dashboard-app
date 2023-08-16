@@ -15,14 +15,14 @@
 </script>
 
 <template>
-  <div class="cards" :style="backgroundCustom">
+  <div class="cardCustom" :style="backgroundCustom">
     
-    <div class="content top">
+    <div class="contentCustom topCustom">
       <h3 style="font-size: 18px;" :style="colorText">{{title}}</h3>
       <p class="percentage" style="font-size: 18px;" :style="colorText">{{porcentagem}}%</p>
     </div>
 
-    <div class="content footer">
+    <div class="contentCustom footerCustom">
       <!-- <i class="fa fa-chart-bar" style="font-size: 18px;"></i> -->
       <i :class="['fa ico', iconProps]" style="font-size: 18px;" :style="colorText"></i>
       <p style="font-size: 18px;" :style="colorText">{{qtd}}</p>
@@ -33,7 +33,7 @@
 
 <style lang="scss" scoped>
    
-   .cards {
+   .cardCustom {
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -42,21 +42,21 @@
     border: 1px solid black;
     border-radius: 25px;
     padding: 16px;
-    height: 80px;
+    height: 110px; // 80px antes do boostrap
    }
 
-   .content {
+   .contentCustom {
      display: flex;
      justify-content: space-between;
      align-items: center;
      color: white;
    }
 
-   .top {
+   .topCustom {
      height: 50px;
    }
 
-   .footer {
+   .footerCustom {
     height: 50px;
    }
 

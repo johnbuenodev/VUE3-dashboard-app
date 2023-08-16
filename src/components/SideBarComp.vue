@@ -29,14 +29,14 @@
   .container-sidebar {
     height: 100vh;
     display: flex;
+    width: 220px;
     flex-direction: column;
-
   }
 
   .routerLinkCustom {
     margin-bottom: 4px;
-    width: 100%;
-    /* border-bottom: 1px solid black; */
+    width: 220px;
+    /* border: 1px solid red; */
     border: 1px solid black;
     background-color: white;
     padding-top: 8px;
@@ -56,6 +56,7 @@
     display: flex; 
     flex-direction:column; 
     align-items: center;
+    width: 220px;
   }
 
 </style>

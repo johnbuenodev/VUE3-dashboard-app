@@ -18,8 +18,8 @@ function exitSystem() {
 <style>
    .container-navbar {
     width: auto;
-    height: 40px;
-    max-height: 40px;
+    height: 60px; /* 40px */
+    max-height: 60px; /* 40px   */
     background-color: cornflowerblue; /* SlateBlue	#6A5ACD */
     padding: 16px;
     display:flex;

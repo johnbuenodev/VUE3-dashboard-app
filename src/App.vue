@@ -88,4 +88,8 @@ html, body {
       height: 100%;
 }
 
+// ol, ul {
+//   padding-left: 0px;
+// }
+
 </style>
